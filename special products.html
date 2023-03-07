@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadakari Home</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_00">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                        second modal</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_01">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_02">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_03">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_04">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_05">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_06">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_07">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="images/logo.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">HADAKARI</span>
+            </a>
+
+          
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="collection.html">collection</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="special products.html">specials</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="index.html">about us</a>
+                    </li>
+                    <li class="nav-item px-3 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="index.html">popular</a>
+                    </li>
+                    <li class="nav-item px-3 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- special products -->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h3 class="position-relative d-inline-block">Special Selection</h3>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_1.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.2500</span>
+                        <a href="#exampleModalToggle" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_2.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3190</span>
+                        <a href="#exampleModalToggle1" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_3.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3990</span>
+                        <a href="#exampleModalToggle2" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_4.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.2590.00</span>
+                        <a href="#exampleModalToggle3" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_8.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.2990</span>
+                        <a href="#exampleModalToggle4" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_5.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3990</span>
+                        <a href="#exampleModalToggle5" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_6.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3990</span>
+                        <a href="#exampleModalToggle6" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_7.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.1990</span>
+                        <a href="#exampleModalToggle7" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- footer -->
+    <footer class="bg-dark py-4">
+        <div class="container">
+            <div class="row text-white g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">About</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Terms and Conditions
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Privacy Policy
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>FAQ's
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Size Guide
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#collection" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#special" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Specials
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#about" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100063640176647"
+                                    class="text-white text-decoration-none text-muted fs-3 me-3">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-3 me-3">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Info</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            No 36 D.s. senanayaka road amapra , Ampara, Sri Lanka
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            hedakarifashions@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            0719852814 /
+                            0751870434
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

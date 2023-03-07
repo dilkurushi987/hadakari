@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadakari Home</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formspree.io/f/mayzjgdb" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_00">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="size" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                        second modal</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_01">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_02">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_03">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_04">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_05">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_06">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Send Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputPassword1"
+                                placeholder="Email Address">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contact Number">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" value="Example_07">
+                        </div>
+                        <br>
+
+
+                        <div class="form-group">
+                            <select name="cars" id="cars" class="form-control">
+                                <option value="volvo">Select Size*</option>
+                                <option value="saab">Small</option>
+                                <option value="opel">Medium</option>
+                                <option value="audi">Large</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-primary">Send</button>
+                        <button type="submit" class="btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                second modal</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="images/logo.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">HADAKARI</span>
+            </a>
+
+          
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#special">specials</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+                    <li class="nav-item px-3 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                    </li>
+                    <li class="nav-item px-3 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">best collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+                <a href="#special" class="btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">new season</h1>
+                <a href="#collection" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".feat">Featured</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrival</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_1.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.2690</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_2.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.1990</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_3.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.3100</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_4.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.2500</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_5.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.3500</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_6.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.2850</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_7.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.2450</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative overflow-hidden">
+                            <img src="images/c_frock_8.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">New Price</p>
+                            <span class="fw-bold">Rs.2000</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                        <a href="collection.html" button type="button" class="btn m-1 text-dark" data-filter=".feat">Shope More</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+    <!-- special products -->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_1.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.2500</span>
+                        <a href="#exampleModalToggle" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_2.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3190</span>
+                        <a href="#exampleModalToggle1" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_3.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3990</span>
+                        <a href="#exampleModalToggle2" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_4.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.2590.00</span>
+                        <a href="#exampleModalToggle3" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_8.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.2990</span>
+                        <a href="#exampleModalToggle4" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_5.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3990</span>
+                        <a href="#exampleModalToggle5" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_6.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.3990</span>
+                        <a href="#exampleModalToggle6" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/special_product_7.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">New Price</p>
+                        <span class="fw-bold d-block">Rs.1990</span>
+                        <a href="#exampleModalToggle7" class="btn btn-primary mt-3" data-bs-toggle="modal">Request
+                            Item</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <a href="special products.html" button type="button" class="btn m-1 text-dark" data-filter=".feat">Shope More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- blogs -->
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div
+                class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-black">Discount Up To 40%</span>
+                    <h2 class="mt-2 mb-4 text-black">Grand Sale Offer!</h2>
+                    <a href="#collection" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="text-sm-start m">Hadakari is a garment manufacturer, retailer, and online retailer
+                        offering a wide range of brands from high-end to exclusive collections. <span
+                            id="dots">...</span><span id="more">We are a family of fashion lovers who are inspired to
+                            create mind-blowing women's apparel designs from the most luxurious materials that are both
+                            comfortable and fashionable.<br>Hadakari, which was established in the year 2017 and offered
+                            the highest quality designs in accordance with international standards, has come a long way.
+                            We intend to broaden our brand portfolio into the global fashion market as a constant backup
+                            thanks to our years of experience. We cordially invite foreign clients to embrace our
+                            distinctive women's clothing designs. Sri Lanka's Ampara is home to our flagship store. As
+                            we gradually expand into the fashion industry, our top aim is to continue to grasp the
+                            preferences, fashion trends, and personal preferences of our cherished clients on a national
+                            and international scale.<br>We are one of the leading women's clothing brands in Sri Lanka
+                            and will keep going till we reach the top level thanks to the established base, the ongoing
+                            search for ways to expand, and the sharpening of our talents. Furthermore, we want to
+                            empower women everywhere by helping them feel confident in their own sense of style and
+                            fashion. Hadakari is a daring, forward-thinking clothing line with goals and objectives that
+                            are grounded in reality. <br>Every product we design, produce, and market is influenced by
+                            our customers as well as by positive global influences like social media, street style, and
+                            popular culture. This has resulted in the creation of a brand that embodies everything it
+                            means to be a woman on the go in the fast-paced world of today while offering extraordinary
+                            styles and designs at a competitive price. It's rapid fashion, not simply fast fashion. We
+                            regularly provide our customers with enticing new collections and fashions. </span> </p>
+                    <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-outline-dark m">Read
+                        More</button>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/about_us.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- popular -->
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Top Rated</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/top_rated_1.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.1890.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/top_rated_2.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.1990.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/top_rated_3.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.1990.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best Selling</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/best_selling_1.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.2990.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/best_selling_2.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.2990.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/best_selling_3.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.2500.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">On Sale</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/on_sale_1.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.1950.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/on_sale_2.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.1990.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/on_sale_3.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">New Price</p>
+                            <span>Rs.1990.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <h3 class="text-center text-muted">Want to get latest update and offers!</h3>
+                <h4 class="text-center text-muted">Subscribe our Newsletter right now</h4>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Email ...">
+                    <a href="dilrukshir987@gmail.com" button class="btn btn-primary" type="submit">Send</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+    <footer class="bg-dark py-4">
+        <div class="container">
+            <div class="row text-white g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">About</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Terms and Conditions
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Privacy Policy
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>FAQ's
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Size Guide
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#collection" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#special" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Specials
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#about" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100063640176647"
+                                    class="text-white text-decoration-none text-muted fs-3 me-3">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-3 me-3">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Info</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            No 36 D.s. senanayaka road amapra , Ampara, Sri Lanka
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            hedakarifashions@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            0719852814 /
+                            0751870434
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
